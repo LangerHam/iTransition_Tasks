@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleTables;
 
 namespace Task3
 {
@@ -13,39 +14,22 @@ namespace Task3
 
         public static void ShowTable(List<Die> dice)
         {
-            Console.WriteLine("\nWin Probability Table (row beats column):");
-
-            var diceNames = dice.Select(d => d.ToString()).ToList();
-            var maxDiceNameLength = diceNames.Max(name => name.Length);
-            var headerWidth = Math.Max(maxDiceNameLength, 4); 
-            var colWidth = 7; 
-
-            Console.Write("".PadRight(headerWidth + 3)); 
-            for (int i = 0; i < dice.Count; i++)
-            {
-                Console.Write($"Die {i}".PadRight(colWidth));
-            }
-            Console.WriteLine();
-
-            Console.Write("".PadRight(headerWidth + 3, '-'));
-            for (int i = 0; i < dice.Count; i++)
-            {
-                Console.Write("".PadRight(colWidth, '-'));
-            }
-            Console.WriteLine();
+            var header = new[] { "Die A \\ Die B" }
+                     .Concat(Enumerable.Range(0, dice.Count).Select(i => $"D{i}"))
+                     .ToArray();
+            var table = new ConsoleTable(header);
 
             for (int i = 0; i < dice.Count; i++)
             {
-                Console.Write($"{diceNames[i]}".PadRight(headerWidth + 3));
-                for (int j = 0; j < dice.Count; j++)
-                {
-                    if (i == j)
-                        Console.Write("-".PadRight(colWidth));
-                    else
-                        Console.Write($"{WinRate(dice[i], dice[j]):F3}".PadRight(colWidth));
-                }
-                Console.WriteLine();
+                var row = new[] { $"D{i}" }
+                          .Concat(Enumerable.Range(0, dice.Count)
+                              .Select(j => i == j ? "-" : $"{Probability.WinRate(dice[i], dice[j]):P1}"))
+                          .ToArray();
+                table.AddRow(row);
             }
+
+            Console.WriteLine("\nWinning probabilities (Die A > Die B)");
+            table.Write();
             Console.WriteLine();
         }
     }
