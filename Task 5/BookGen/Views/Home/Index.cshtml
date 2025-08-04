@@ -1,0 +1,293 @@
+﻿
+@{
+    ViewBag.Title = "Book Store";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .control-panel {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        margin-bottom: 2rem;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #e9ecef;
+        cursor: pointer;
+    }
+
+    .details-row td {
+        padding: 0 !important;
+        border-top: none;
+    }
+
+    .details-content {
+        background-color: #f1f5f9;
+        padding: 1.5rem;
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .book-cover {
+        flex-shrink: 0;
+        width: 200px;
+        height: 300px;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    .reviews-section blockquote {
+        border-left: 4px solid #cbd5e1;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    .reviews-section footer {
+        font-style: normal;
+        font-weight: 600;
+        color: #475569;
+    }
+
+    #loading-indicator {
+        display: none;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #likes-value {
+        font-weight: 600;
+        color: #0d6efd;
+    }
+
+    .likes-display {
+        color: #dc3545;
+        font-weight: 500;
+    }
+</style>
+
+<!-- Main container -->
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-5">Book Store</h1>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+        <div class="row g-3 align-items-end">
+            <!-- Language Selector -->
+            <div class="col-md-3">
+                <label for="locale" class="form-label">Language</label>
+                <select id="locale" class="form-select">
+                    <option value="en_US" selected>English</option>
+                    <option value="ja">Japanese (Japan)</option>
+                    <option value="ru">Russian (Russia)</option>
+                    <option value="ko">Korean (Korea)</option>
+                </select>
+            </div>
+
+            <!-- Seed Input -->
+            <div class="col-md-3">
+                <label for="seed" class="form-label">Seed</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="seed" value="12345">
+                    <button class="btn btn-outline-secondary" type="button" id="random-seed-btn" title="Generate Random Seed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.261.43.398.86.398 1.286 0 .884-.504 1.558-1.272 2.062C5.748 11.01 4.596 11.5 3.5 11.5H2v2h1.5a4.5 4.5 0 0 0 4.056-2.412c.492-.86.786-1.864.786-2.942 0-1.24-.423-2.34-1.158-3.215C7.42 4.24 6.11 3.5 4.5 3.5H3V1H1.5a.5.5 0 0 0-.5.5V3z" />
+                            <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9V9.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z" />
+                            <path fill-rule="evenodd" d="M0 11.5A.5.5 0 0 1 .5 11H3c1.253 0 2.213-.39 2.862-.954.649-.564.96-1.32.96-2.212 0-.61-.162-1.158-.468-1.638a5.5 5.5 0 0 0-1.23-1.58C4.538 4.26 3.247 3.5 1.5 3.5H1V1H.5a.5.5 0 0 0-.5.5v10zM1.5 4.5H3c1.44 0 2.65.625 3.447 1.554.8.93.998 2.013.998 2.812 0 .976-.325 1.755-.92 2.298C5.903 11.66 4.85 12 3.5 12H2V4.5H1.5z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Likes Slider -->
+            <div class="col-md-3">
+                <label for="likes" class="form-label">Avg. Likes: <span id="likes-value">5.0</span></label>
+                <input type="range" class="form-range" id="likes" min="0" max="10" step="0.1" value="5">
+            </div>
+
+            <!-- Reviews Input -->
+            <div class="col-md-3">
+                <label for="reviews" class="form-label">Avg. Reviews</label>
+                <input type="number" class="form-control" id="reviews" step="0.1" value="2.5">
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Table -->
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Publisher</th>
+                </tr>
+            </thead>
+            <tbody id="book-table-body">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading-indicator">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Loading more books...</p>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+$(document).ready(function () {
+    let currentPage = 0;
+    let isLoading = false;
+    let debounceTimer;
+
+    function loadBooks(isNewQuery) {
+        if (isLoading) return;
+        isLoading = true;
+
+        if (isNewQuery) {
+            currentPage = 0;
+            $('#book-table-body').empty();
+        }
+
+        $('#loading-indicator').show();
+
+        const params = {
+            locale: $('#locale').val(),
+            seed: parseInt($('#seed').val()) || 0,
+            likesAvg: parseFloat($('#likes').val()),
+            reviewsAvg: parseFloat($('#reviews').val()) || 0,
+            page: currentPage
+        };
+
+        $.ajax({
+            url: '@Url.Action("GenerateBooks", "Home")',
+            type: 'GET',
+            data: params,
+            success: function (books) {
+                if (books.length > 0) {
+                    appendBooksToTable(books);
+                    currentPage++;
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error fetching books:", error);
+            },
+            complete: function () {
+                isLoading = false;
+                $('#loading-indicator').hide();
+            }
+        });
+    }
+
+    function appendBooksToTable(books) {
+        const tableBody = $('#book-table-body');
+        books.forEach(book => {
+            const row = `
+                <tr class="book-row" data-book-index="${book.Index}">
+                    <th scope="row">${book.Index}</th>
+                    <td>${book.Isbn}</td>
+                    <td>${book.Title}</td>
+                    <td>${book.Authors}</td>
+                    <td>${book.Publisher}</td>
+                </tr>
+            `;
+            const details = `
+                <tr class="details-row" style="display: none;" data-details-for="${book.Index}">
+                    <td colspan="5">
+                        <div class="details-content">
+                            <img src="${book.CoverImageUrl}" alt="Cover for ${book.Title}" class="book-cover" onerror="this.onerror=null;this.src='https://placehold.co/200x300/e2e8f0/475569?text=Image+Not+Found';">
+                            <div class="book-details-info">
+                                <h3>${book.Title}</h3>
+                                <p class="text-muted mb-2">by ${book.Authors}</p>
+                                <div class="d-flex align-items-center mb-3 likes-display">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                    </svg>
+                                    <span class="ms-2">${book.Likes} Likes</span>
+                                </div>
+                                <div class="reviews-section">
+                                    <h4>Reviews (${book.Reviews.length})</h4>
+                                    <hr/>
+                                    ${generateReviewsHtml(book.Reviews)}
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            `;
+            tableBody.append(row);
+            tableBody.append(details);
+        });
+    }
+
+    function generateReviewsHtml(reviews) {
+        if (!reviews || reviews.length === 0) {
+            return '<p>No reviews for this book.</p>';
+        }
+        return reviews.map(review => `
+            <blockquote class="p-2">
+                <p>"${review.Text}"</p>
+                <footer>- ${review.Author}</footer>
+            </blockquote>
+        `).join('');
+    }
+
+    // --- EVENT HANDLERS ---
+
+    $('#locale, #seed, #likes, #reviews').on('input', function () {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function () {
+            loadBooks(true);
+        }, 500); 
+    });
+
+    $('#likes').on('input', function() {
+        $('#likes-value').text(parseFloat($(this).val()).toFixed(1));
+    });
+
+    $('#random-seed-btn').on('click', function () {
+        $('#seed').val(Math.floor(Math.random() * 100000000));
+        loadBooks(true);
+    });
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+            if (!isLoading) {
+                loadBooks(false);
+            }
+        }
+    });
+
+    $('#book-table-body').on('click', '.book-row', function () {
+        const bookIndex = $(this).data('book-index');
+        const detailsRow = $(`.details-row[data-details-for="${bookIndex}"]`);
+
+        if (!detailsRow.is(':visible')) {
+            $('.details-row').hide();
+            $('.book-row').removeClass('table-primary');
+        }
+
+        detailsRow.toggle();
+        $(this).toggleClass('table-primary');
+    });
+
+    loadBooks(true);
+});
+    </script>
+}
