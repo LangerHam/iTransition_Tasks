@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\iTransition\\Task 5\\BookGen\\",
+  "WorkspaceRootPath": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|d:\\itransition\\task 5\\bookgen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|d:\\itransition\\itransition_tasks\\task 5\\bookgen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\Task 5\\BookGen\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BB84CCD-A256-47F5-89C4-4C23092D7CB2}|BookGen.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -72,11 +72,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T15:16:18.332Z",
               "EditorCaption": ""
@@ -85,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -97,9 +97,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Views\\Shared\\Error.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\Shared\\Error.cshtml",
               "RelativeToolTip": "Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -109,9 +109,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAGcAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -121,9 +121,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -133,9 +133,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "RouteConfig.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\App_Start\\RouteConfig.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,9 +145,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Book.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Models\\Book.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Models\\Book.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Models\\Book.cs",
               "RelativeToolTip": "Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,9 +157,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Review.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 5\\BookGen\\Models\\Review.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
-              "ToolTip": "D:\\iTransition\\Task 5\\BookGen\\Models\\Review.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 5\\BookGen\\Models\\Review.cs",
               "RelativeToolTip": "Models\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
