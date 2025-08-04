@@ -1,0 +1,106 @@
+﻿@model UserManagement.ViewModel.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    /* Custom styles for the login page to match the design */
+    .login-container {
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .login-form-section {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-art-section {
+        background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .login-form-wrapper {
+        max-width: 400px;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .form-control {
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    .btn-primary {
+        height: 48px;
+        border-radius: 8px;
+        background-color: #4285F4;
+        border: none;
+    }
+
+    .app-logo {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #4285F4;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<div class="login-container">
+    <div class="col-md-6 login-form-section">
+        <div class="login-form-wrapper">
+            <div class="app-logo">
+                THE APP
+            </div>
+            <h4>Start your journey</h4>
+            <h2 class="mb-4">Sign In to The App</h2>
+
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "test@example.com" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group form-check mb-3">
+                    @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input" })
+                    @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-label" })
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <span>Don't have an account? @Html.ActionLink("Sign up", "Register")</span>
+                </div>
+                <div class="mt-2 text-center">
+                    @Html.ActionLink("Forgot password?", "ForgotPassword")
+                </div>
+            }
+        </div>
+    </div>
+    <div class="col-md-6 login-art-section d-none d-md-block">
+        <!-- This is the decorative background image section -->
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
