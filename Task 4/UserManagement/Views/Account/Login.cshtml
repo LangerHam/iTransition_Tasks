@@ -1,106 +1,157 @@
 ﻿@model UserManagement.ViewModel.LoginViewModel
 @{
     ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/Empty.cshtml";
 }
 
 <style>
-    /* Custom styles for the login page to match the design */
-    .login-container {
-        display: flex;
-        min-height: 100vh;
-        width: 100%;
-    }
-
-    .login-form-section {
-        background-color: #ffffff;
+    .modern-login-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 100vh;
+        padding: 1rem;
     }
 
-    .login-art-section {
-        background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2070&auto=format&fit=crop');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .login-form-wrapper {
-        max-width: 400px;
+    .glass-form-wrapper {
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px); 
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 2.5rem 3rem;
         width: 100%;
-        padding: 2rem;
-    }
-
-    .form-control {
-        height: 48px;
-        border-radius: 8px;
-    }
-
-    .btn-primary {
-        height: 48px;
-        border-radius: 8px;
-        background-color: #4285F4;
-        border: none;
+        max-width: 450px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        color: white;
     }
 
     .app-logo {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        color: #4285F4;
-        margin-bottom: 2rem;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        text-align: center;
     }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+        .form-header h2 {
+            font-weight: 300;
+            font-size: 1.25rem; 
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+    .form-control {
+        height: 50px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1); 
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 1rem;
+        width: 100%; 
+    }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            color: white;
+            box-shadow: none;
+        }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-check-input {
+        margin-top: 0; 
+        margin-right: 0.5rem;
+    }
+
+    .form-check-label {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-primary {
+        height: 50px;
+        border-radius: 10px;
+        background-color: #4A90E2; 
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        width: 100%; 
+    }
+
+        .btn-primary:hover {
+            background-color: #407ac2;
+        }
+
+    .text-danger {
+        color: #ffcdd2 !important; 
+        font-size: 0.875rem;
+        padding-left: 0.25rem;
+    }
+
+    .bottom-links {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+        .bottom-links a {
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+            .bottom-links a:hover {
+                text-decoration: underline;
+            }
 </style>
 
-<div class="login-container">
-    <div class="col-md-6 login-form-section">
-        <div class="login-form-wrapper">
-            <div class="app-logo">
-                THE APP
-            </div>
-            <h4>Start your journey</h4>
-            <h2 class="mb-4">Sign In to The App</h2>
-
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
-            {
-                @Html.AntiForgeryToken()
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-                <div class="form-group mb-3">
-                    @Html.LabelFor(m => m.Email, new { @class = "form-label" })
-                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "test@example.com" })
-                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                </div>
-
-                <div class="form-group mb-3">
-                    @Html.LabelFor(m => m.Password, new { @class = "form-label" })
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
-                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                </div>
-
-                <div class="form-group form-check mb-3">
-                    @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input" })
-                    @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-label" })
-                </div>
-
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Sign In</button>
-                </div>
-
-                <div class="mt-4 text-center">
-                    <span>Don't have an account? @Html.ActionLink("Sign up", "Register")</span>
-                </div>
-                <div class="mt-2 text-center">
-                    @Html.ActionLink("Forgot password?", "ForgotPassword")
-                </div>
-            }
+<div class="modern-login-container">
+    <div class="glass-form-wrapper">
+        <div class="app-logo">
+            PANEL
         </div>
-    </div>
-    <div class="col-md-6 login-art-section d-none d-md-block">
-        <!-- This is the decorative background image section -->
+        <div class="form-header">
+            <h2>Sign In to Your Account</h2>
+        </div>
+
+        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group mb-3 offset-md-1">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-4 offset-md-1">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="d-grid mb-4">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+
+            <div class="text-center bottom-links">
+                <span>Don't have an account? @Html.ActionLink("Sign up", "Register")</span>
+                
+            </div>
+        }
     </div>
 </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
-

@@ -1,41 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\iTransition\\Task 4\\UserManagement\\",
+  "WorkspaceRootPath": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\task 4\\usermanagement\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\itransition_tasks\\task 4\\usermanagement\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\task 4\\usermanagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\itransition_tasks\\task 4\\usermanagement\\views\\shared\\empty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:views\\shared\\empty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\task 4\\usermanagement\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\itransition_tasks\\task 4\\usermanagement\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\task 4\\usermanagement\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\task 4\\usermanagement\\context\\user.metadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|d:\\itransition\\itransition_tasks\\task 4\\usermanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\context\\user.metadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:context\\user.metadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\Task 4\\UserManagement\\context\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\context\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:context\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\Task 4\\UserManagement\\context\\usermgmtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\context\\usermgmtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:context\\usermgmtmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\Task 4\\UserManagement\\context\\usermgmtmodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\context\\usermgmtmodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:context\\usermgmtmodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\Task 4\\UserManagement\\context\\usermgmtmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\context\\usermgmtmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{764EC8DB-3494-4C36-A525-2416E4649633}|UserManagement.csproj|solutionrelative:context\\usermgmtmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -46,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,39 +86,77 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Empty.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Views\\Shared\\Empty.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Empty.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Views\\Shared\\Empty.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Empty.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T15:05:06.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T15:01:06.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T15:00:14.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFUAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-03T02:45:55.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "RouteConfig.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\App_Start\\RouteConfig.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T02:24:13.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T02:24:13.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwBcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T02:22:21.509Z",
               "EditorCaption": ""
@@ -115,9 +165,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\ViewModel\\LoginViewModel.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\ViewModel\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\ViewModel\\LoginViewModel.cs",
               "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,24 +176,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "User.Metadata.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Context\\User.Metadata.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\User.Metadata.cs",
               "RelativeDocumentMoniker": "Context\\User.Metadata.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Context\\User.Metadata.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\User.Metadata.cs",
               "RelativeToolTip": "Context\\User.Metadata.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T05:10:35.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T05:10:35.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UserMgmtModel.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Context\\UserMgmtModel.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\UserMgmtModel.cs",
               "RelativeDocumentMoniker": "Context\\UserMgmtModel.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Context\\UserMgmtModel.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\UserMgmtModel.cs",
               "RelativeToolTip": "Context\\UserMgmtModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -151,11 +200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "User.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Context\\User.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\User.cs",
               "RelativeDocumentMoniker": "Context\\User.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Context\\User.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\User.cs",
               "RelativeToolTip": "Context\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,11 +212,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "UserMgmtModel.Context.cs",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Context\\UserMgmtModel.Context.cs",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\UserMgmtModel.Context.cs",
               "RelativeDocumentMoniker": "Context\\UserMgmtModel.Context.cs",
-              "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Context\\UserMgmtModel.Context.cs",
+              "ToolTip": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\UserMgmtModel.Context.cs",
               "RelativeToolTip": "Context\\UserMgmtModel.Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,12 +224,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "UserMgmtModel.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\iTransition\\Task 4\\UserManagement\\Context\\UserMgmtModel.edmx",
+              "DocumentMoniker": "D:\\iTransition\\iTransition_Tasks\\Task 4\\UserManagement\\Context\\UserMgmtModel.edmx",
               "RelativeDocumentMoniker": "Context\\UserMgmtModel.edmx",
               "ToolTip": "D:\\iTransition\\Task 4\\UserManagement\\Context\\UserMgmtModel.edmx [Diagram1]",
-              "RelativeToolTip": "Context\\UserMgmtModel.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\Task 4\\UserManagement\\Context\\UserMgmtModel.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
               "WhenOpened": "2025-08-01T17:01:18.648Z"
             }
