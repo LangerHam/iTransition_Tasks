@@ -20,5 +20,6 @@ namespace UserManagement.Context
         public Nullable<System.DateTime> LastLoginTime { get; set; }
         public System.DateTime RegistrationTime { get; set; }
         public string Status { get; set; }
+        public string PasswordHash { get; set; }
     }
 }
